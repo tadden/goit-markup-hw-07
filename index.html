@@ -22,7 +22,7 @@
   <body>
     <!-- HEADER -->
 
-    <header>
+    <header class="header">
       <div class="container nav">
         <a href="./index.html" class="logo">
           <span class="logo__text">Web</span>Studio</a
@@ -156,7 +156,7 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="image list">
             <li class="image__item">
-              <div class="image__overlay">
+              <div class="image__projects__overlay">
                 <img
                   src="./images/img1.jpg"
                   width="370"
@@ -168,7 +168,7 @@
               </div>
             </li>
             <li class="image__item">
-              <div class="image__overlay">
+              <div class="image__projects__overlay">
                 <img
                   src="./images/img2.jpg"
                   width="370"
@@ -180,7 +180,7 @@
               </div>
             </li>
             <li class="image__item">
-              <div class="image__overlay">
+              <div class="image__projects__overlay">
                 <img
                   src="./images/img3.jpg"
                   width="370"
@@ -661,8 +661,8 @@
           <form autocomplete="off">
             <div class="input">
               <label for="name" class="input__label">Имя</label>
-              <div class="input__icon--relative">
-                <input type="text" name="name" id="name" class="input__form" />
+              <div class="input__box">
+                <input type="text" name="name" id="name" class="input__field" />
                 <svg class="input__icon" width="18" height="18">
                   <use href="./images/icons/sprite.svg#icon-person"></use>
                 </svg>
@@ -670,8 +670,8 @@
             </div>
             <div class="input">
               <label for="tel" class="input__label">Телофон</label>
-              <div class="input__icon--relative">
-                <input type="tel" name="tel" id="tel" class="input__form" />
+              <div class="input__box">
+                <input type="tel" name="tel" id="tel" class="input__field" />
                 <svg class="input__icon" width="18" height="18">
                   <use href="./images/icons/sprite.svg#icon-phone"></use>
                 </svg>
@@ -679,12 +679,12 @@
             </div>
             <div class="input">
               <label for="e-mail" class="input__label">Почта</label>
-              <div class="input__icon--relative">
+              <div class="input__box">
                 <input
                   type="email"
                   name="mail"
                   id="e-mail"
-                  class="input__form"
+                  class="input__field"
                 />
                 <svg class="input__icon" width="18" height="18">
                   <use href="./images/icons/sprite.svg#icon-email"></use>
@@ -696,7 +696,8 @@
               <textarea
                 name="comment"
                 id="comment"
-                class="input__form form-comment"
+                rows="5"
+                class="input__comment input__field"
                 placeholder="Введите текст"
               ></textarea>
             </div>
