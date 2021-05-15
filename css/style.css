@@ -131,19 +131,6 @@ p {
   margin-right: 50px;
 }
 
-/* Header-contacts */
-
-.contacts {
-  display: flex;
-  align-items: center;
-}
-.contacts__link {
-  display: flex;
-  align-items: center;
-  color: var(--alt-text-clr);
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 .menu__link--active {
   position: relative;
   color: var(--nav__logo--accent-clr);
@@ -161,6 +148,20 @@ p {
   border-radius: 2px;
   background-color: var(--nav__logo--accent-clr);
   bottom: -1px;
+}
+
+/* Header-contacts */
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  color: var(--alt-text-clr);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts__icon {
@@ -679,16 +680,16 @@ p {
 
 /* Portfolio страница */
 
-.filter-list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-btn {
+.filter__btn {
   padding: 6px 22px;
   border-radius: 4px;
   border-color: transparent;
@@ -704,26 +705,26 @@ p {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter-btn:hover,
-.filter-btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
   color: var(--white-text);
   background-color: var(--nav__logo--accent-clr);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.card-item {
+.card__item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-left: 30px;
   margin-top: 30px;
   background: var(--white-text);
 }
-.card-link {
+.card__link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-link:hover,
-.card-link:focus {
+.card__link:hover,
+.card__link:focus {
   display: block;
   color: currentColor;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -733,7 +734,7 @@ p {
 /* OVERLAY */
 .card-overlay {
   position: relative;
-  overflow: section__title--hidden;
+  overflow: hidden;
 }
 
 .overlay {
@@ -757,8 +758,8 @@ p {
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-link:hover .overlay,
-.card-link:focus .overlay {
+.card__link:hover .overlay,
+.card__link:focus .overlay {
   transform: translateY(0);
   opacity: 1;
 }
@@ -769,13 +770,13 @@ p {
   border-top: none;
 }
 
-.brand-title {
+.card__name {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
-.type-filter {
+.card__filter {
   line-height: 1.87;
   font-size: 16px;
   font-weight: 400;

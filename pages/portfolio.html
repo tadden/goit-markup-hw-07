@@ -20,11 +20,9 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <!-- Шапка сайта -->
+    <!-- HEADER -->
 
     <header class="page-header">
-      <!--  Навигация -->
-
       <div class="container">
         <nav class="nav">
           <a href="../index.html" class="logo nav__logo">
@@ -47,7 +45,7 @@
           </ul>
         </nav>
 
-        <!-- Контакты header -->
+        <!-- HEADER-CONTACTS -->
 
         <ul class="contacts list">
           <li class="menu__item">
@@ -70,37 +68,39 @@
       </div>
     </header>
 
+    <!-- MAIN -->
+
     <main>
       <section class="section">
         <div class="container">
           <h1 class="section__title--hidden">Портфолио</h1>
-          <ul class="filter-list list">
-            <li class="filter-item">
-              <button type="button" class="filter-btn">Все</button>
+          <ul class="filter list">
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Все</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-btn">Приложения</button>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Приложения</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-btn">Веб-сайты</button>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Веб-сайты</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-btn">Дизайн</button>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Дизайн</button>
             </li>
-            <li class="filter-item">
-              <button type="button" class="filter-btn">Маркетинг</button>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="card-set list">
-            <li class="card-item">
-              <a href="" class="link card-link">
+          <ul class="card-set list card">
+            <li class="card__item">
+              <a href="" class="link card__link">
                 <div class="card-overlay">
                   <img
                     src="../images/img33.jpg"
                     alt="Веб-сайт"
                     width="370"
-                    class="img-item"
+                    class="card__img"
                   />
                   <div class="overlay">
                     <p>
@@ -112,20 +112,20 @@
                   </div>
                 </div>
                 <div class="description">
-                  <h2 class="brand-title">Технокряк</h2>
-                  <p class="type-filter">Веб-сайт</p>
+                  <h2 class="card__name">Технокряк</h2>
+                  <p class="card__filter">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="card-item">
-              <a href="" class="link card-link">
+            <li class="card__item">
+              <a href="" class="link card__link">
                 <div class="card-overlay">
                   <img
                     src="../images/img4.jpg"
                     alt="Постер"
                     width="370"
-                    class="img-item"
+                    class="card__img"
                   />
                   <div class="overlay">
                     <p>
@@ -137,19 +137,19 @@
                   </div>
                 </div>
                 <div class="description">
-                  <h2 class="brand-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="type-filter">Дизайн</p>
+                  <h2 class="card__name">Постер New Orlean vs Golden Star</h2>
+                  <p class="card__filter">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="card-item">
-              <a href="" class="link card-link">
+            <li class="card__item">
+              <a href="" class="link card__link">
                 <div class="card-overlay">
                   <img
                     src="../images/img5.jpg"
                     alt="Лого ресторана"
                     width="370"
-                    class="img-item"
+                    class="card__img"
                   />
                   <div class="overlay">
                     <p>
@@ -161,19 +161,19 @@
                   </div>
                 </div>
                 <div class="description">
-                  <h2 class="brand-title">Ресторан Seafood</h2>
-                  <p class="type-filter">Приложение</p>
+                  <h2 class="card__name">Ресторан Seafood</h2>
+                  <p class="card__filter">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="card-item">
-              <a href="" class="link card-link">
+            <li class="card__item">
+              <a href="" class="link card__link">
                 <div class="card-overlay">
                   <img
                     src="../images/img6.jpg"
                     alt="Наушники"
                     width="370"
-                    class="img-item"
+                    class="card__img"
                   />
                   <div class="overlay">
                     <p>
@@ -185,19 +185,19 @@
                   </div>
                 </div>
                 <div class="description">
-                  <h2 class="brand-title">Проект Prime</h2>
-                  <p class="type-filter">Маркетинг</p>
+                  <h2 class="card__name">Проект Prime</h2>
+                  <p class="card__filter">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="card-item">
-              <a href="" class="link card-link">
+            <li class="card__item">
+              <a href="" class="link card__link">
                 <div class="card-overlay">
                   <img
                     src="../images/img7.jpg"
                     alt="Коробки"
                     width="370"
-                    class="img-item"
+                    class="card__img"
                   />
                   <div class="overlay">
                     <p>
@@ -209,19 +209,19 @@
                   </div>
                 </div>
                 <div class="description">
-                  <h2 class="brand-title">Проект Boxes</h2>
-                  <p class="type-filter">Приложение</p>
+                  <h2 class="card__name">Проект Boxes</h2>
+                  <p class="card__filter">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="card-item">
-              <a href="" class="link card-link">
+            <li class="card__item">
+              <a href="" class="link card__link">
                 <div class="card-overlay">
                   <img
                     src="../images/img8.jpg"
                     alt="Веб-сайт"
                     width="370"
-                    class="img-item"
+                    class="card__img"
                   />
                   <div class="overlay">
                     <p>
@@ -233,19 +233,19 @@
                   </div>
                 </div>
                 <div class="description">
-                  <h2 class="brand-title">Inspiration has no Borders</h2>
-                  <p class="type-filter">Веб-сайт</p>
+                  <h2 class="card__name">Inspiration has no Borders</h2>
+                  <p class="card__filter">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="card-item">
-              <a href="" class="link card-link">
+            <li class="card__item">
+              <a href="" class="link card__link">
                 <div class="card-overlay">
                   <img
                     src="../images/img9.jpg"
                     alt="Книга"
                     width="370"
-                    class="img-item"
+                    class="card__img"
                   />
                   <div class="overlay">
                     <p>
@@ -257,19 +257,19 @@
                   </div>
                 </div>
                 <div class="description">
-                  <h2 class="brand-title">Издание Limited Edition</h2>
-                  <p class="type-filter">Дизайн</p>
+                  <h2 class="card__name">Издание Limited Edition</h2>
+                  <p class="card__filter">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="card-item">
-              <a href="" class="link card-link">
+            <li class="card__item">
+              <a href="" class="link card__link">
                 <div class="card-overlay">
                   <img
                     src="../images/img10.jpg"
                     alt="Бирка"
                     width="370"
-                    class="img-item"
+                    class="card__img"
                   />
                   <div class="overlay">
                     <p>
@@ -281,19 +281,19 @@
                   </div>
                 </div>
                 <div class="description">
-                  <h2 class="brand-title">Проект LAB</h2>
-                  <p class="type-filter">Маркетинг</p>
+                  <h2 class="card__name">Проект LAB</h2>
+                  <p class="card__filter">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="card-item">
-              <a href="" class="link card-link">
+            <li class="card__item">
+              <a href="" class="link card__link">
                 <div class="card-overlay">
                   <img
                     src="../images/img11.jpg"
                     alt="Приложение"
                     width="370"
-                    class="img-item"
+                    class="card__img"
                   />
                   <div class="overlay">
                     <p>
@@ -305,8 +305,8 @@
                   </div>
                 </div>
                 <div class="description">
-                  <h2 class="brand-title">Growing Business</h2>
-                  <p class="type-filter">Приложение</p>
+                  <h2 class="card__name">Growing Business</h2>
+                  <p class="card__filter">Приложение</p>
                 </div>
               </a>
             </li>
@@ -315,22 +315,24 @@
       </section>
     </main>
 
-    <!-- Подвал -->
+    <!-- FOOTER -->
 
-    <footer class="footer block--dark-bgr">
+    <footer class="footer block block--dark-bgr">
       <div class="container footer-container">
+        <!-- FOOTER-CONTACTS -->
+
         <div class="address-footer">
-          <a href="../index.html" class="logo footer__logo">
+          <a href="./index.html" class="logo footer__logo">
             <span class="nav__logo--accent">Web</span>Studio</a
           >
           <address class="address">
-            <ul class="list">
+            <ul class="address__list list">
               <li class="address__item">
                 <a
                   href="https://goo.gl/maps/Tqcn4PF3FHRy9P8z9"
                   rel="nofollow noopener"
                   target="_blank"
-                  class="link address"
+                  class="link address__link address"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
@@ -350,7 +352,7 @@
           </address>
         </div>
 
-        <!-- присоединяйтесь -->
+        <!-- JOIN US -->
 
         <div class="social-footer">
           <h3 class="social-footer__title">присоединяйтесь</h3>
@@ -400,6 +402,30 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <!-- SUBSCRIBE FORM -->
+
+        <div class="subscribe">
+          <h3 class="subscribe__title social-footer__title">
+            Подпишитесь на рассылку
+          </h3>
+          <div class="subscribe__block">
+            <form autocomplete="off">
+              <input
+                type="email"
+                card-set__name="mail"
+                placeholder="E-mail"
+                class="subscribe__input"
+              />
+            </form>
+            <button type="submit" class="btn subscribe__btn">
+              Подписаться
+              <svg class="subscribe__icon" width="24" height="24">
+                <use href="../images/icons/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
