@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
-      card-set__card-set__name="viewport"
+      team__team__name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
     <title>Портфолио</title>
@@ -26,21 +26,21 @@
       <div class="container">
         <nav class="nav">
           <a href="../index.html" class="logo nav__logo">
-            <span class="nav__logo--accent">Web</span>Studio</a
+            <span class="logo__text">Web</span>Studio</a
           >
-          <ul class="menu list">
-            <li class="menu__item">
-              <a href="../index.html" class="link menu__link">Студия</a>
+          <ul class="nav list">
+            <li class="nav__item">
+              <a href="../index.html" class="link nav__link">Студия</a>
             </li>
-            <li class="menu__item">
+            <li class="nav__item">
               <a
                 href="../pages/portfolio.html"
-                class="link menu__link menu__link--active"
+                class="link nav__link nav__link--active"
                 >Портфолио</a
               >
             </li>
-            <li class="menu__item">
-              <a href="" class="link menu__link">Контакты</a>
+            <li class="nav__item">
+              <a href="" class="link nav__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -48,7 +48,7 @@
         <!-- HEADER-CONTACTS -->
 
         <ul class="contacts list">
-          <li class="menu__item">
+          <li class="nav__item">
             <a href="mailto:info@devstudio.com" class="link contacts__link">
               <svg class="contacts__icon" width="16px" height="12px">
                 <use href="../images/icons/sprite.svg#icon-envelope"></use>
@@ -56,7 +56,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="menu__item">
+          <li class="nav__item">
             <a href="tel:+380961111111" class="link contacts__link">
               <svg class="contacts__icon" width="10px" height="16px">
                 <use href="../images/icons/sprite.svg#icon-smartphone"></use>
@@ -73,7 +73,7 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="section__title--hidden">Портфолио</h1>
+          <h1 class="visually-hidden">Портфолио</h1>
           <ul class="filter list">
             <li class="filter__item">
               <button type="button" class="filter__btn">Все</button>
@@ -92,7 +92,7 @@
             </li>
           </ul>
 
-          <ul class="card-set list card">
+          <ul class="team list card">
             <li class="card__item">
               <a href="" class="link card__link">
                 <div class="card-overlay">
@@ -317,13 +317,13 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer block block--dark-bgr">
-      <div class="container footer-container">
+    <footer class="footer block block--reverse-bgr">
+      <div class="container footer__container">
         <!-- FOOTER-CONTACTS -->
 
-        <div class="address-footer">
+        <div class="footer__contacts">
           <a href="./index.html" class="logo footer__logo">
-            <span class="nav__logo--accent">Web</span>Studio</a
+            <span class="logo__text">Web</span>Studio</a
           >
           <address class="address">
             <ul class="address__list list">
@@ -339,12 +339,12 @@
               <li class="address__item">
                 <a
                   href="mailto:info@example.com"
-                  class="link address__link--dark"
+                  class="link address__link--reverse"
                   >info@example.com</a
                 >
               </li>
               <li class="address__item">
-                <a href="tel:+380991111111" class="link address__link--dark"
+                <a href="tel:+380991111111" class="link address__link--reverse"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -354,13 +354,13 @@
 
         <!-- JOIN US -->
 
-        <div class="social-footer">
-          <h3 class="social-footer__title">присоединяйтесь</h3>
-          <ul class="social-list list">
-            <li class="social__item">
-              <a href="" class="social__link social__link--dark">
+        <div class="join">
+          <h3 class="join__title">присоединяйтесь</h3>
+          <ul class="networks-list list">
+            <li class="networks__item">
+              <a href="" class="networks__link networks__link--reverse">
                 <svg
-                  class="social__icon social__icon--white"
+                  class="networks__icon networks__icon--white"
                   width="20px"
                   height="20px"
                 >
@@ -368,10 +368,10 @@
                 </svg>
               </a>
             </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--dark">
+            <li class="networks__item">
+              <a href="" class="networks__link networks__link--reverse">
                 <svg
-                  class="social__icon social__icon--white"
+                  class="networks__icon networks__icon--white"
                   width="20px"
                   height="20px"
                 >
@@ -379,10 +379,10 @@
                 </svg>
               </a>
             </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--dark">
+            <li class="networks__item">
+              <a href="" class="networks__link networks__link--reverse">
                 <svg
-                  class="social__icon social__icon--white"
+                  class="networks__icon networks__icon--white"
                   width="20px"
                   height="20px"
                 >
@@ -390,10 +390,10 @@
                 </svg>
               </a>
             </li>
-            <li class="social__item">
-              <a href="" class="social__link social__link--dark">
+            <li class="networks__item">
+              <a href="" class="networks__link networks__link--reverse">
                 <svg
-                  class="social__icon social__icon--white"
+                  class="networks__icon networks__icon--white"
                   width="20px"
                   height="20px"
                 >
@@ -407,14 +407,12 @@
         <!-- SUBSCRIBE FORM -->
 
         <div class="subscribe">
-          <h3 class="subscribe__title social-footer__title">
-            Подпишитесь на рассылку
-          </h3>
+          <h3 class="subscribe__title join__title">Подпишитесь на рассылку</h3>
           <div class="subscribe__block">
             <form autocomplete="off">
               <input
                 type="email"
-                card-set__name="mail"
+                team__name="mail"
                 placeholder="E-mail"
                 class="subscribe__input"
               />

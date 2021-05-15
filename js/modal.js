@@ -9,6 +9,6 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("section__title--hidden");
+    refs.modal.classList.toggle("visually-hidden");
   }
 })();
