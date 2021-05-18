@@ -36,6 +36,22 @@ p {
   margin-bottom: 0;
 }
 
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  color: var(--main-text-clr);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover, a:focus {
+  color: var(--accent-clr);
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -47,42 +63,12 @@ p {
   overflow: visually-hidden;
 }
 
-.link {
-  color: var(--main-text-clr);
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-clr);
-}
-
-.list {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.image {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.image__item {
-  flex-basis: calc((100% - 3 * 30px) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 /* LOGO */
@@ -384,7 +370,7 @@ p {
 }
 
 .checkbox:checked + .checkbox__label::before {
-  background-image: url(../images/icons/icon\check.svg);
+  background-services: url(../images/icons/icon\check.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--accent-clr);
@@ -482,11 +468,11 @@ p {
 }
 
 /* FEATURES SECTION */
-.features-section {
+.features {
   padding-top: 94px;
 }
 
-.features {
+.features__list {
   display: flex;
 }
 
@@ -523,11 +509,24 @@ p {
 }
 
 /* WORKS SECTION */
-.image__projects__overlay {
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.services__item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.services__overlay {
   position: relative;
 }
 
-.image__box {
+.services__box {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -545,11 +544,11 @@ p {
 }
 
 /* TEAM SECTION */
-.section__team {
+.team {
   background-color: var(--alt-bgr);
 }
 
-.team {
+.team__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -588,7 +587,7 @@ p {
 }
 
 /* CUSTOMERS SECTION */
-.customers {
+.customers__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
